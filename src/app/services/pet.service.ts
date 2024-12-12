@@ -10,11 +10,11 @@ export class PetService {
 
   selectedPet: Pet;
   pets: Pet[];
-  readonly URL_API = 'http://localhost:4000/api/pets';
+  readonly URL_API = 'https://mi-veterinaria-backend-wuaq.onrender.com/api/pets';
 
   constructor(private http: HttpClient) {
     this.selectedPet = new Pet();
-    this.pets = []; 
+    this.pets = [];
   }
 
   postPet(pet: Pet) {
